@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/casacas-removebg-preview.png">
+    <title>Tienda</title>
+</head>
+<body>
+    <header class="nav-bar">
+        <!-- Hago el nav-bar en el header y uso flex para que quede todo en linea-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand logo-letras" href="index.html">
+                    <img class="logo-img" src="../images/logo-segundo-color.png" alt="Logo de la pagina">
+                    Casacas LIGA ARG
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navegacion" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicio.html">Servicios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="envios">
+            <p>ENVIOS GRATIS A TODO EL PAIS A PARTIR DE $70.000</p>
+        </div>
+    </header>
+    <div class="titulo-separador">
+        <div class="linea"></div>
+        <h1>CAMISETAS DISPONIBLES</h1>
+        <div class="linea"></div>
+    </div>
+    <section class="section-tienda">
+        <div class="costado">
+            <!--Realizar un filtrado de camisetas por talle-->
+            <h2>TALLES</h2>
+            <div class="checkboxes">
+                <div class="talle">
+                    <input type="checkbox" id="XS" name="XS">
+                    <h4>XS</h4>
+                </div>
+                <div class="talle">
+                    <input type="checkbox" id="S" name="S">
+                    <h4>S</h4>
+                </div>
+                <div class="talle">
+                    <input type="checkbox" id="M" name="M">
+                    <h4>M</h4>
+                </div>
+                <div class="talle">
+                    <input type="checkbox" id="L" name="L">
+                    <h4>L</h4>
+                </div>
+                <div class="talle">
+                    <input type="checkbox" id="XL" name="XL">
+                    <h4>XL</h4>
+                </div>
+            </div>
+            <h2>COLOR</h2>
+            <div class="checkboxes">
+                <div class="color">
+                    <input type="checkbox" id="ROJO" name="ROJO">
+                    <h4>ROJO</h4>
+                </div>
+                <div class="color">
+                    <input type="checkbox" id="AZUL" name="AZUL">
+                    <h4>AZUL</h4>
+                </div>
+                <div class="color">
+                    <input type="checkbox" id="BLANCO" name="BLANCO">
+                    <h4>BLANCO</h4>
+                </div>
+                <div class="color">
+                    <input type="checkbox" id="NEGRO" name="NEGRO">
+                    <h4>NEGRO</h4>
+                </div>
+                <div class="color">
+                    <input type="checkbox" id="AMARILLO" name="AMARILLO">
+                    <h4>AMARILLO</h4>
+                </div>
+                <div class="color">
+                    <input type="checkbox" id="VERDE" name="VERDE">
+                    <h4>VERDE</h4>
+                </div>
+                <div class="color">
+                    <input type="checkbox" id="CELESTE" name="CELESTE">
+                    <h4>CELESTE</h4>
+                </div>
+                <div class="color">
+                    <input type="checkbox" id="VARIOS" name="VARIOS">
+                    <h4>VARIOS</h4>
+                </div>
+            </div>
+            <h2>AÑO</h2>
+            <div class="checkboxes">
+                <div class="talle">
+                    <input type="checkbox" id="ROJO" name="ROJO">
+                    <h4>2022</h4>
+                </div>
+                <div class="talle">
+                    <input type="checkbox" id="ROJO" name="ROJO">
+                    <h4>2023</h4>
+                </div>
+                <div class="talle">
+                    <input type="checkbox" id="AZUL" name="AZUL">
+                    <h4>2024</h4>
+                </div>
+            </div>
+            <h2>EQUIPO</h2>
+            <div class="checkboxes">
+                <div class="color">
+                    <input type="checkbox" id="ROJO" name="ROJO">
+                    <h4>TITULAR</h4>
+                </div>
+                <div class="color">
+                    <input type="checkbox" id="ROJO" name="ROJO">
+                    <h4>SUPLENTE</h4>
+                </div>
+            </div>
+        </div>
+        <div class="camisetas">
+            <!--Esta seccion tiene que ir a la derecha de las checkbox de talles-->
+            <!--Solo puse 3, pero van a estar todas las camisetas de la liga, y se tiene que poder bajar y ver el resto de camisetas-->
+            <!--Las camisetas agrupadas de a 3-->
+            <div class="tienda-productos">
+                <div class="producto"> <!--Mismo div de producto que en destacados del index-->
+                    <a href="#">
+                        <img src="/images/camisetas/river.jpg" alt="Camiseta de River Plate">
+                        <p>CAMISETA RIVER PLATE 2024</p>
+                        <p>$74.999</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/boca.jpg" alt="Camiseta de Boca juniors">
+                        <p>CAMISETA BOCA JUNIORS 2024</p>
+                        <p>$74.999</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/independiente.jpg" alt="Camiseta de Independiente">
+                        <p>CAMISETA INDEPENDIENTE 2024</p>
+                        <p>$74.999</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/racing.jpg" alt="Camiseta de Racing">
+                        <p>CAMISETA RACING 2024</p>
+                        <p>$74.999</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/sanlorenzo.jpg" alt="Camiseta de San Lorenzo">
+                        <p>CAMISETA SAN LORENZO 2024</p>
+                        <p>$74.999</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/gimnasia.jpg" alt="Camiseta de Gimnasia">
+                        <p>CAMISETA GIMNASIA 2024</p>
+                        <p>$54.000</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/huracan.jpg" alt="Camiseta de Huracan">
+                        <p>CAMISETA HURACAN 2023</p>
+                        <p>$47.500</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/talleres.jpg" alt="Camiseta de Talleres">
+                        <p>CAMISETA TALLERES 2024</p>
+                        <p>$69.900</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/newels.jpg" alt="Camiseta de Newell's">
+                        <p>CAMISETA NEWELL'S 2024</p>
+                        <p>$46.200</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/estudiantes.png" alt="Camiseta de Estudiantes">
+                        <p>CAMISETA ESTUDIANTES 2023</p>
+                        <p>$35.500</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/velez.jpg" alt="Camiseta de Velez">
+                        <p>CAMISETA VELEZ 2023</p>
+                        <p>$37.799</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/argentinos.jpg" alt="Camiseta de Argentinos JR">
+                        <p>CAMISETA ARGENTINOS JR 2023</p>
+                        <p>$41.999</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/rosario.jpg" alt="Camiseta de Rosario Central">
+                        <p>CAMISETA ROSARIO CENTRAL 2023</p>
+                        <p>$53.999</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/banfield.jpg" alt="Camiseta de Banfield">
+                        <p>CAMISETA BANFIELD 2023</p>
+                        <p>$28.000</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/tucuman.jpg" alt="Camiseta de Atletico Tucuman">
+                        <p>CAMISETA ATLETICO TUCUMAN 2023</p>
+                        <p>$34.999</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/lanus.jpg" alt="Camiseta de Lanus">
+                        <p>CAMISETA LANUS 2024</p>
+                        <p>$28.000</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/defensa.jpg" alt="Camiseta de Defensa y Justicia">
+                        <p>CAMISETA DEFENSA Y JUSTICIA 2023</p>
+                        <p>$34.990</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/riversup.jpg" alt="Camiseta de River Plate suplente">
+                        <p>CAMISETA RIVER SUPLENTE</p>
+                        <p>$74.999</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/bocasup.jpg" alt="Camiseta de Boca Juniors suplente">
+                        <p>CAMISETA BOCA SUPLENTE</p>
+                        <p>$74.999</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/indepsup.jpg" alt="Camiseta de Independiente suplente">
+                        <p>CAMISETA INDEPENDIENTE SUPLENTE</p>
+                        <p>$74.999</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/racingsup.jpg" alt="Camiseta de Racing suplente">
+                        <p>CAMISETA RACING SUPLENTE</p>
+                        <p>$74.999</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/sanlorenzosup.jpg" alt="Camiseta de San Lorenzo suplente">
+                        <p>CAMISETA SAN LORENZO SUPLENTE</p>
+                        <p>$74.999</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/seleccion.jpg" alt="Camiseta de la Seleccion Argentina">
+                        <p>CAMISETA SELECCION 3 ESTRELLAS</p>
+                        <p>$124.999</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="#">
+                        <img src="/images/camisetas/seleccionsup.jpg" alt="Camiseta de la Seleccion Argentina Suplente">
+                        <p>CAMISETA SELECCION 3 ESTRELLAS SUPLENTE</p>
+                        <p>$124.999</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="iconos-redes">
+            <div class="redes">
+                <a href="#">
+                    <img  src="../images/instagram.jpg" alt="Logo de Instagram">
+                </a>
+            </div>
+            <div class="redes">
+                <a href="#">
+                    <img src="../images/twitter.jpg" alt="Logo de Twitter">     <!-- 3 elementos "redes" para colocar los links respectivos-->
+                </a>
+            </div>
+            <div class="redes">
+                <a href="#">
+                    <img src="../images/youtube.jpg" alt="Logo de Youtube">
+                </a>
+            </div>
+        </div>
+        <div>
+            <p>copyright &copy;AIH 2024</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>

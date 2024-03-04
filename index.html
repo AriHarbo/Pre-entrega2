@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/casacas-removebg-preview.png">
+    <title>Casacas Liga AR</title>
+</head>
+<body>
+    <header class="nav-bar">
+        <!-- Hago el nav-bar en el header y uso flex para que quede todo en linea-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand logo-letras" href="index.html">
+                    <img class="logo-img" src="./images/logo-segundo-color.png" alt="Logo de la pagina">
+                    Casacas LIGA ARG
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navegacion" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/servicio.html">Servicios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="envios">
+            <p>ENVIOS GRATIS A TODO EL PAIS A PARTIR DE $70.000</p>
+        </div>
+    </header>
+    <div class="titulo-separador">
+        <div class="linea"></div>
+        <h1>COMPRA TUS FAVORITAS</h1>
+        <div class="linea"></div>
+    </div>
+    <section class="section1">
+        <!-- Primera seccion, apartado con foto en grande junto a un texto y boton para ver la camiseta de la seleccion -->
+        <div id="seleccion">
+            <div class="mitad-1">
+                <img src="./images/messi.jpg" alt="Foto de Messi">
+            </div>
+            <div class="mitad-2">
+                <p>La camiseta de los campeones del mundo.</p>
+                <p>¡Comprate la del 10!</p>
+                <a href="#" class="ver">Ver</a>
+                <!-- El boton no lleva a ningun lado, en un futuro tiene que mostrar la informacion de la camiseta-->
+            </div>
+        </div>
+    </section>
+    <section class="section2">
+        <h2>DESTACADOS</h2>
+        <!--Esta seccion cuenta con los productos destacados-->
+        <!--La idea es hacer un carousel en un futuro-->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/firstslide.jpg" class="d-block w-100" alt="Camiseta de River presentada por los jugadores">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/secondslide.jpg" class="d-block w-100" alt="Camiseta de Boca presentada por los jugadores">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/thirdslide.jpg" class="d-block w-100" alt="Camiseta de Racing presentada por los jugadores">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section class="section-ubi">
+        <h2>NUESTRO LOCAL</h2>
+        <div class="section-ubi2">
+            <div class="iframe-ubi">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.4123069860984!2d-57.55447622410744!3d-37.96750617193741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dbd8c7629b9b%3A0xacfbfc320d306011!2sChubut%20908%2C%20B7600AQS%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1707765063805!5m2!1ses!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="texto-ubi">
+                <h2>MAR DEL PLATA</h2>
+                <p class="texto-ubi2">Si sos de Mar del Plata acercate al showroom para DESCUENTOS EN EFECTIVO todos los
+                    dias</p>
+                <a class="texto-ubi3" href="https://maps.app.goo.gl/8fPXtnMwr3jhhSWx8" target="_blank">Encontranos en
+                    CHUBUT 908</a>
+            </div>
+        </div>
+    </section>
+    <section class="section-sorteo">
+        <h2>SORTEOS SEMANALES</h2>
+        <p>Participa de sorteos todas las semanas en nuestras redes sociales.</p>
+        <p>¡Segui los pasos y ganate una camiseta gratis!</p>
+        <div class="redes-sorteo">
+            <div class="redes-sorteo-pasos">
+                <h3>PARTICIPA EN INSTAGRAM</h3>
+                <ol>
+                    <li>Seguinos en Instagram</li>
+                    <li>Dale like a la publicacion semanal del sorteo</li>
+                    <li>Subinos a historia</li>
+                    <li>Ya estas participando!</li>
+                </ol>
+                <a href="#">IR A INSTAGRAM</a>
+            </div>
+            <div class="redes-sorteo-pasos">
+                <h3>PARTICIPA EN TWITTER</h3>
+                <ol>
+                    <li>Seguinos en Twitter</li>
+                    <li>Dale like a la publicacion semanal del sorteo</li>
+                    <li>Repostea la publicacion</li>
+                    <li>Ya estas participando!</li>
+                </ol>
+                <a href="#">IR A TWITTER</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="iconos-redes">
+            <div class="redes">
+                <a href="#">
+                    <img  src="../images/instagram.jpg" alt="Logo de Instagram">
+                </a>
+            </div>
+            <div class="redes">
+                <a href="#">
+                    <img src="../images/twitter.jpg" alt="Logo de Twitter">     <!-- 3 elementos "redes" para colocar los links respectivos-->
+                </a>
+            </div>
+            <div class="redes">
+                <a href="#">
+                    <img src="../images/youtube.jpg" alt="Logo de Youtube">
+                </a>
+            </div>
+        </div>
+        <div>
+            <p>copyright &copy;AIH 2024</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
