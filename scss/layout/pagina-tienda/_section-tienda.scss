@@ -1,0 +1,521 @@
+//PANTALLA DESKTOP
+@media only screen and (min-width: 1200px){
+    .section-tienda{
+        display: flex;
+        margin-bottom: 5rem;
+        .costado{
+            margin: 5rem;
+            h2{
+                font-size: 2rem;
+            }
+            .checkboxes{
+                .talle{
+                    display: flex;
+                    background-color: $color-secundario;
+                    width: 50%;
+                    margin: 1rem;
+                    color: $color-primario;
+                    border: 3px solid #000000;
+                    padding-left: .5rem;
+                    h4{
+                        font-size: 1rem ;
+                        margin: 0.1rem;
+                        padding: .5rem;
+                    }
+                }
+                .color{
+                    display: flex;
+                    background-color: $color-secundario;
+                    width: 80%;
+                    margin: 1rem;
+                    color: $color-primario;
+                    border: 3px solid #000000;
+                    padding-left: .5rem ;
+                    h4{
+                        font-size: 1rem;
+                        margin: 0.1rem;
+                        padding: .3rem;
+                    }
+                }
+            }
+        }
+        .camisetas{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .tienda-productos{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 50px 10px;
+                .producto{
+                    padding: .1rem;
+                    margin: 1rem 3rem;
+                    border: 2px solid black;
+                    border-radius: 10px;
+                    background-color: #000000;
+                    overflow: hidden;
+                    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+                    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Añadir transición a la sombra */
+                    &:hover {
+                        transform: scale(1.05); /* Aumenta un poco el tamaño al pasar el mouse */
+                        box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.85); /* Modificar la sombra al pasar el mouse */
+                    }
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                    a{
+                        color: #F4EAE0;
+                        text-align: center;
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                    p{
+                        margin: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//DISPOSITIVO MOVIL VERTICAL
+@media only screen and (max-width: 320px){
+    .section-tienda{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        .costado{
+            margin: 1rem;
+            h2{
+                margin: 0.1;
+                font-size: 1rem;
+                font-weight: bold;
+                text-align: center;
+            }
+            .checkboxes{
+                display: flex;
+                flex-wrap: wrap;
+                .talle{
+                    display: flex;
+                    background-color: $color-secundario;
+                    width: 25%;
+                    margin: .2rem;
+                    color: $color-primario;
+                    border: 3px solid #000000;
+                    padding-left: .2rem;
+                    h4{
+                        font-size: .8rem;
+                        font-weight: bold;
+                        margin: 0.1rem;
+                        padding: .2rem;
+                    }
+                }
+                .color{
+                    display: flex;
+                    background-color: $color-secundario;
+                    width: 30%;
+                    margin: .2rem;
+                    margin-bottom: 1rem;
+                    color: $color-primario;
+                    border: 3px solid #000000;
+                    padding-left: .5rem ;
+                    h4{
+                        font-size: .55rem;
+                        font-weight: bold;
+                        margin: 0.1rem;
+                        padding: .2rem;
+                    }
+                }
+            }
+        }
+        .camisetas{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .tienda-productos{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+                .producto{
+                    padding: .1rem;
+                    margin: 1rem 2rem;
+                    border: 2px solid black;
+                    border-radius: 10px;
+                    background-color: #000000;
+                    overflow: hidden;
+                    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+                    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Añadir transición a la sombra */
+                    &:hover {
+                        transform: scale(1.05); /* Aumenta un poco el tamaño al pasar el mouse */
+                        box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.85); /* Modificar la sombra al pasar el mouse */
+                    }
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                    a{
+                        color: #F4EAE0;
+                        text-align: center;
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                    p{
+                        font-size: 4vw;
+                        margin: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//DISPOSITIVO MOVIL HORIZONTAL
+@media only screen and (min-width: 320px) and (max-width:480px){
+    .section-tienda{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+        .costado{
+            margin: 1.5rem;
+            h2{
+                font-size: 1.5rem;
+                font-weight: bold;
+                text-align: center;
+            }
+            .checkboxes{
+                display: flex;
+                flex-wrap: wrap;
+                .talle{
+                    display: flex;
+                    background-color: $color-secundario;
+                    width: 20%;
+                    margin: .5rem;
+                    color: $color-primario;
+                    border: 3px solid #000000;
+                    padding-left: .5rem;
+                    h4{
+                        font-size: .8rem;
+                        font-weight: bold;
+                        margin: 0.1rem;
+                        padding: .2rem;
+                    }
+                }
+                .color{
+                    display: flex;
+                    background-color: $color-secundario;
+                    width: 30%;
+                    margin: .2rem;
+                    margin-bottom: 1rem;
+                    color: $color-primario;
+                    border: 3px solid #000000;
+                    padding-left: .5rem ;
+                    h4{
+                        font-size: .8rem;
+                        font-weight: bold;
+                        margin: 0.1rem;
+                        padding: .2rem;
+                    }
+                }
+            }
+        }
+        .camisetas{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .tienda-productos{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+                .producto{
+                    padding: .1rem;
+                    margin: 1rem 4rem;
+                    border: 2px solid black;
+                    border-radius: 10px;
+                    background-color: #000000;
+                    overflow: hidden;
+                    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+                    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Añadir transición a la sombra */
+                    &:hover {
+                        transform: scale(1.05); /* Aumenta un poco el tamaño al pasar el mouse */
+                        box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.85); /* Modificar la sombra al pasar el mouse */
+                    }
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                    a{
+                        color: #F4EAE0;
+                        text-align: center;
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                    p{
+                        font-size: 2vw;
+                        margin: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width:639px){
+    .section-tienda{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+        .costado{
+            margin: 1.5rem;
+            h2{
+                font-size: 2rem;
+            }
+            .checkboxes{
+                display: flex;
+                flex-wrap: wrap;
+                .talle{
+                    display: flex;
+                    background-color: $color-secundario;
+                    width: 20%;
+                    margin: 1rem;
+                    color: $color-primario;
+                    border: 3px solid #000000;
+                    padding-left: .5rem;
+                    h4{
+                        font-size: 1rem ;
+                        margin: 0.1rem;
+                        padding: .5rem;
+                    }
+                }
+                .color{
+                    display: flex;
+                    background-color: $color-secundario;
+                    width: 35%;
+                    margin: 1rem;
+                    color: $color-primario;
+                    border: 3px solid #000000;
+                    padding-left: .5rem ;
+                    h4{
+                        font-size: 1rem;
+                        margin: 0.1rem;
+                        padding: .3rem;
+                    }
+                }
+            }
+        }
+        .camisetas{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .tienda-productos{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                .producto{
+                    padding: .1rem;
+                    margin: 2rem;
+                    border: 2px solid black;
+                    border-radius: 10px;
+                    background-color: #000000;
+                    overflow: hidden;
+                    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+                    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Añadir transición a la sombra */
+                    &:hover {
+                        transform: scale(1.05); /* Aumenta un poco el tamaño al pasar el mouse */
+                        box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.85); /* Modificar la sombra al pasar el mouse */
+                    }
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                    a{
+                        color: #F4EAE0;
+                        text-align: center;
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                    p{
+                        font-size: 2vw;
+                        margin: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//TABLETAS EN HORIZONTAL
+@media only screen and (min-width: 640px) and (max-width:768px){
+    .section-tienda{
+        display: flex;
+        margin-bottom: 5rem;
+        .costado{
+            margin: 1.5rem;
+            h2{
+                font-size: 2rem;
+            }
+            .checkboxes{
+                .talle{
+                    display: flex;
+                    background-color: $color-secundario;
+                    width: 50%;
+                    margin: 1rem;
+                    color: $color-primario;
+                    border: 3px solid #000000;
+                    padding-left: .5rem;
+                    h4{
+                        font-size: 1rem ;
+                        margin: 0.1rem;
+                        padding: .5rem;
+                    }
+                }
+                .color{
+                    display: flex;
+                    background-color: $color-secundario;
+                    width: 80%;
+                    margin: 1rem;
+                    color: $color-primario;
+                    border: 3px solid #000000;
+                    padding-left: .5rem ;
+                    h4{
+                        font-size: 1rem;
+                        margin: 0.1rem;
+                        padding: .3rem;
+                    }
+                }
+            }
+        }
+        .camisetas{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .tienda-productos{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                .producto{
+                    padding: .1rem;
+                    margin: 2rem;
+                    border: 2px solid black;
+                    border-radius: 10px;
+                    background-color: #000000;
+                    overflow: hidden;
+                    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+                    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Añadir transición a la sombra */
+                    &:hover {
+                        transform: scale(1.05); /* Aumenta un poco el tamaño al pasar el mouse */
+                        box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.85); /* Modificar la sombra al pasar el mouse */
+                    }
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                    a{
+                        color: #F4EAE0;
+                        text-align: center;
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                    p{
+                        font-size: 2vw;
+                        margin: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// PANTALLA PORTATILES
+@media only screen and (min-width: 769px) and (max-width:1199px){
+    .section-tienda{
+        display: flex;
+        margin-bottom: 5rem;
+        .costado{
+            margin: 3rem;
+            h2{
+                font-size: 2rem;
+            }
+            .checkboxes{
+                .talle{
+                    display: flex;
+                    background-color: $color-secundario;
+                    width: 50%;
+                    margin: 1rem;
+                    color: $color-primario;
+                    border: 3px solid #000000;
+                    padding-left: .5rem;
+                    h4{
+                        font-size: 1rem ;
+                        margin: 0.1rem;
+                        padding: .5rem;
+                    }
+                }
+                .color{
+                    display: flex;
+                    background-color: $color-secundario;
+                    width: 80%;
+                    margin: 1rem;
+                    color: $color-primario;
+                    border: 3px solid #000000;
+                    padding-left: .5rem ;
+                    h4{
+                        font-size: 1rem;
+                        margin: 0.1rem;
+                        padding: .3rem;
+                    }
+                }
+            }
+        }
+        .camisetas{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .tienda-productos{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                .producto{
+                    padding: .1rem;
+                    margin: 1rem;
+                    border: 2px solid black;
+                    border-radius: 10px;
+                    background-color: #000000;
+                    overflow: hidden;
+                    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+                    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Añadir transición a la sombra */
+                    &:hover {
+                        transform: scale(1.05); /* Aumenta un poco el tamaño al pasar el mouse */
+                        box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.85); /* Modificar la sombra al pasar el mouse */
+                    }
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                    a{
+                        color: #F4EAE0;
+                        text-align: center;
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                    p{
+                        font-size: 1.5vw;
+                        margin: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

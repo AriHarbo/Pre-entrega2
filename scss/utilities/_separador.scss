@@ -1,0 +1,41 @@
+
+//PANTALLA DESKTOP, TABLETAS VERTICAL Y HORIZONTAL Y PORTATILES
+    .titulo-separador{
+        position: relative;
+        text-align: center;
+        margin-bottom: 1rem;
+        .linea{
+            display: inline-block;
+            height: 2px;
+            background-color: #000000;
+            width: calc(50% - 300px); /* El ancho es la mitad del ancho de la pantalla menos 50px */
+            margin-top: 10px; /* Ajusta la separación entre el título y las líneas según tus preferencias */
+            position: relative;
+            bottom: .5rem;
+        }
+        h1{
+            display: inline-block;
+            padding: 0 20px; /* Ajusta el relleno del título según tus preferencias */
+            position: relative;
+            z-index: 1;
+        }
+    }
+//DISPOSITIVO MOVIL VERTICAL Y HORIZONTAL
+@media only screen and (max-width: 640px){
+    .titulo-separador{
+        position: relative;
+        text-align: center;
+        margin-bottom: .5rem;
+        h1{
+            color: $color-primario;
+            background-color: $color-secundario;
+            margin: 0 2rem;
+            display: inline-block;
+            border: 2px solid #000000;
+            padding: 10px; /* Ajusta el relleno del título según tus preferencias */
+            position: relative;
+            z-index: 1;
+            font-weight: bold;
+        }
+    }
+} 

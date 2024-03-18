@@ -1,0 +1,167 @@
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    background-color: #000000;
+    margin-bottom: 2rem;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        .container-fluid {
+            .logo-letras {
+                display: flex;
+                align-items: center;
+                font-weight: bold;
+                font-size: 2rem;
+                color: #F4DFC8;
+                /*Estilos del nombre de la pagina, centrado con el logo*/
+                text-decoration: none;
+                height: 50px;
+                transition: transform 0.3s;
+
+                &:hover {
+                    color: #F4DFC8;
+                    transform: scale(1.01);
+                    /* Aumenta un poco el tamaño al pasar el mouse */
+                }
+
+                .logo-img {
+                    margin-right: 10px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    width: 20%;
+                    height: 70px;
+                }
+            }
+
+            .navegacion {
+                ul {
+                    display: flex;
+                    list-style: none;
+
+                    li {
+                        a {
+                            display: flex;
+                            margin-left: 1rem;
+                            margin-right: 1rem;
+                            color: #F4DFC8;
+                            /*Estilos para la barra de navegacion, separacion entre elementos y colores*/
+                            font-weight: bold;
+                            font-size: 1rem;
+                            text-decoration: none;
+                            transition: transform 0.3s;
+                            overflow-x: hidden;
+                            &:hover{
+                                color: #F4DFC8;
+                                transform: scale(1.1); /* Aumenta un poco el tamaño al pasar el mouse */
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .envios{
+        background-color: #3C2A21;
+        color: #F4EAE0;
+        font-size: 12px;
+        text-align: center;
+        padding: .01rem;
+        align-items: center;
+        justify-content: center;
+        p {
+            margin: 1rem;
+        }
+    }
+}
+
+// Modificacion para que el titulo de "CASACAS LIGA ARG" se adapte bien al tamaño de la pagina menor o igual a 380px
+@media only screen and (max-width: 380px){
+    header {
+        position: sticky;
+        top: 0px;
+        z-index: 10;
+        width: 100%;
+        background-color: #000000;
+        margin-bottom: 2rem;
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+    
+            .container-fluid {
+                .logo-letras {
+                    display: flex;
+                    align-items: center;
+                    font-weight: bold;
+                    font-size: 5vw;
+                    color: #F4DFC8;
+                    /*Estilos del nombre de la pagina, centrado con el logo*/
+                    text-decoration: none;
+                    height: 50px;
+                    transition: transform 0.3s;
+    
+                    &:hover {
+                        color: #F4DFC8;
+                        transform: scale(1.01);
+                        /* Aumenta un poco el tamaño al pasar el mouse */
+                    }
+    
+                    .logo-img {
+                        margin-right: 10px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        width: 30%;
+                        height: 70px;
+                    }
+                }
+    
+                .navegacion {
+                    ul {
+                        display: flex;
+                        list-style: none;
+    
+                        li {
+                            a {
+                                display: flex;
+                                margin-left: 1rem;
+                                margin-right: 1rem;
+                                color: #F4DFC8;
+                                /*Estilos para la barra de navegacion, separacion entre elementos y colores*/
+                                font-weight: bold;
+                                font-size: 1rem;
+                                text-decoration: none;
+                                transition: transform 0.3s;
+                                overflow-x: hidden;
+                                &:hover{
+                                    color: #F4DFC8;
+                                    transform: scale(1.1); /* Aumenta un poco el tamaño al pasar el mouse */
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .envios{
+            background-color: #3C2A21;
+            color: #F4EAE0;
+            font-size: 12px;
+            text-align: center;
+            padding: .01rem;
+            align-items: center;
+            justify-content: center;
+            p {
+                margin: 1rem;
+            }
+        }
+    }
+    
+}

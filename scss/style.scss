@@ -1,0 +1,30 @@
+//Variables para usar en todas las paginas
+$color-primario: #F4DFC8;
+$color-secundario: #3C2A21;
+$tamaño-img: 25vw;
+
+//PARA TODAS LAS PAGINAS:
+@import "base/body";
+@import "components/compartidos/header";
+@import "components/navbar-toggler";
+@import "components/compartidos/footer";
+
+//PARA LA PAGINA DE INICIO
+@import "utilities/separador";
+@import "layout/pagina-inicio/section1";
+@import "layout/pagina-inicio/section2";
+@import "layout/pagina-inicio/section-ubi";
+@import "layout/pagina-inicio/section-sorteo";
+
+//PARA LA PAGINA DE LA TIENDA
+@import "layout/pagina-tienda/section-tienda";
+
+//PARA LA PAGINA DE CONTACTO
+@import "layout/pagina-contacto/contacto";
+
+//PARA LA PAGINA DE NOSOTROS
+@import "layout/pagina-nosotros/nosotros";
+@import "components/hr";
+
+//PARA LA PAGINA DE SERVICIOS
+@import "layout/pagina-servicios/servicios";

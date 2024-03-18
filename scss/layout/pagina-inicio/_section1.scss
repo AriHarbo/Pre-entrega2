@@ -1,0 +1,290 @@
+//PANTALLA DESKTOP
+@media only screen and (min-width: 1200px){
+    .section1{
+        display: flex;
+        align-items: center; /* Alinea verticalmente en el centro */
+        justify-content: space-between; /* Espacio entre los elementos */
+        flex-wrap: wrap;
+        margin: 0 15rem 3rem 15rem;
+        border: 2px solid #000000;
+        background-color: #000000;
+        box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+        #seleccion{
+            display: flex;
+            margin: 0;
+            .mitad-1 {
+                flex: 0 0 50%; /* La imagen ocupa el 50% del espacio disponible */
+                margin-right: 20px; /* Ajusta el margen derecho según sea necesario */
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: auto; /* Mantiene la proporción de la imagen */
+                    display: block; /* Elimina el espacio adicional por debajo de la imagen */
+                    transition: 0.5s;
+                    object-fit: cover;
+                }
+            }
+            .mitad-2{
+                padding-top: 30px;
+                p{
+                    color: $color-primario;
+                    font-weight: bold;
+                    font-size: 3vw;
+                }
+                .ver{
+                    position: relative;
+                    top: 2rem ;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: $color-primario;
+                    margin-left:  3rem;
+                    padding-top: .8rem;
+                    padding-bottom: .8rem; /*Creo un boton mediante un enlace dandole estilos*/
+                    padding-left: 1.8rem;
+                    padding-right: 1.8rem;
+                    border-radius: 10px;
+                    border: 2px solid $color-primario;
+                    background-color:  $color-secundario;
+                }
+            }
+        }
+        &:hover .mitad-1 img{
+            transform: scale(1.05);
+        }
+    }
+}
+
+//DISPOSITIVO MOVIL VERTICAL
+@media only screen and (max-width: 320px){
+    .section1{
+        display: flex;
+        align-items: center; /* Alinea verticalmente en el centro */
+        justify-content: space-between; /* Espacio entre los elementos */
+        flex-wrap: wrap;
+        margin: 1rem;
+        border: 2px solid #000000;
+        background-color: #000000;
+        box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+        #seleccion{
+            display: flex;
+            margin: 0;
+            .mitad-1 {
+                flex: 0 0 50%; /* La imagen ocupa el 50% del espacio disponible */
+                margin-right: 20px; /* Ajusta el margen derecho según sea necesario */
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: auto; /* Mantiene la proporción de la imagen */
+                    display: block; /* Elimina el espacio adicional por debajo de la imagen */
+                    transition: 0.5s;
+                    object-fit: cover;
+                }
+            }
+            .mitad-2{
+                p{
+                    color: #F4DFC8;
+                    margin: 1rem 0;
+                    font-weight: bold;
+                    font-size: 3vw;
+                }
+                .ver{
+                    font-size: 5vw;
+                    text-decoration: none;
+                    color: #F4DFC8;
+                    padding-top: .3rem;
+                    padding-bottom: .3rem; /*Creo un boton mediante un enlace dandole estilos*/
+                    padding-left: 1.2rem;
+                    padding-right: 1.2rem;
+                    border-radius: 10px;
+                    border: 2px solid #F4EAE0;
+                    background-color:  #3C2A21;
+                }
+            }
+        }
+        &:hover .mitad-1 img{
+            transform: scale(1.05);
+        }
+    }
+}
+
+//DISPOSITIVO MOVIL HORIZONTAL
+@media only screen and (min-width: 320px) and (max-width:480px){
+    .section1{
+        display: flex;
+        align-items: center; /* Alinea verticalmente en el centro */
+        justify-content: space-between; /* Espacio entre los elementos */
+        flex-wrap: wrap;
+        margin: 1rem;
+        border: 2px solid #000000;
+        background-color: #000000;
+        box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+        #seleccion{
+            display: flex;
+            margin: 0;
+            .mitad-1 {
+                flex: 0 0 50%; /* La imagen ocupa el 50% del espacio disponible */
+                margin-right: 20px; /* Ajusta el margen derecho según sea necesario */
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: auto; /* Mantiene la proporción de la imagen */
+                    display: block; /* Elimina el espacio adicional por debajo de la imagen */
+                    transition: 0.5s;
+                    object-fit: cover;
+                }
+            }
+            .mitad-2{
+                p{
+                    color: #F4DFC8;
+                    margin: 1rem 0;
+                    font-weight: bold;
+                    font-size: 3vw;
+                }
+                .ver{
+                    position: relative;
+                    top: 1rem;
+                    font-size: 1.3rem;
+                    text-decoration: none;
+                    color: #F4DFC8;
+                    padding-top: .3rem;
+                    padding-bottom: .3rem; /*Creo un boton mediante un enlace dandole estilos*/
+                    padding-left: 1.2rem;
+                    padding-right: 1.2rem;
+                    border-radius: 10px;
+                    border: 2px solid #F4EAE0;
+                    background-color:  #3C2A21;
+                }
+            }
+        }
+        &:hover .mitad-1 img{
+            transform: scale(1.05);
+        }
+    }
+}
+
+//TABLETAS EN VERTICAL Y HORIZONTAL
+@media only screen and (min-width: 481px) and (max-width:768px){
+    .section1{
+        display: flex;
+        align-items: center; /* Alinea verticalmente en el centro */
+        justify-content: space-between; /* Espacio entre los elementos */
+        flex-wrap: wrap;
+        margin: 3rem;
+        border: 2px solid #000000;
+        background-color: #000000;
+        box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+        #seleccion{
+            display: flex;
+            margin: 0;
+            .mitad-1 {
+                flex: 0 0 50%; /* La imagen ocupa el 50% del espacio disponible */
+                margin-right: 20px; /* Ajusta el margen derecho según sea necesario */
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: auto; /* Mantiene la proporción de la imagen */
+                    display: block; /* Elimina el espacio adicional por debajo de la imagen */
+                    transition: 0.5s;
+                    object-fit: cover;
+                }
+            }
+            .mitad-2{
+                padding-top: 30px;
+                p{
+                    color: $color-primario;
+                    font-weight: bold;
+                    margin: .2rem;
+                    font-size: 3vw;
+                }
+                .mitad-2-text{
+                    margin-bottom: 1.5rem;
+                }
+                .ver{
+                    position: relative;
+                    top: 1rem;
+                    font-size: 5vw;
+                    text-decoration: none;
+                    color: $color-primario;
+                    margin-left: 3rem;
+                    padding-top: .5rem;
+                    padding-bottom: .5rem; /*Creo un boton mediante un enlace dandole estilos*/
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
+                    border-radius: 10px;
+                    border: 2px solid $color-primario;
+                    background-color:  $color-secundario;
+                }
+            }
+        }
+        &:hover .mitad-1 img{
+            transform: scale(1.05);
+        }
+    }
+}
+
+// PANTALLA PORTATILES
+@media only screen and (min-width: 769px) and (max-width:1199px){
+    .section1{
+        display: flex;
+        align-items: center; /* Alinea verticalmente en el centro */
+        justify-content: space-between; /* Espacio entre los elementos */
+        flex-wrap: wrap;
+        margin: 0 10rem 3rem 10rem;
+        border: 2px solid #000000;
+        background-color: #000000;
+        box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+        #seleccion{
+            display: flex;
+            margin: 0;
+            .mitad-1 {
+                flex: 0 0 50%; /* La imagen ocupa el 50% del espacio disponible */
+                margin-right: 20px; /* Ajusta el margen derecho según sea necesario */
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: auto; /* Mantiene la proporción de la imagen */
+                    display: block; /* Elimina el espacio adicional por debajo de la imagen */
+                    transition: 0.5s;
+                    object-fit: cover;
+                }
+            }
+            .mitad-2{
+                padding-top: 30px;
+                p{
+                    color: $color-primario;
+                    font-weight: bold;
+                    font-size: 2.5vw;
+                }
+                .ver{
+                    position: relative;
+                    top: 1rem;
+                    font-size: 5vw;
+                    text-decoration: none;
+                    color: $color-primario;
+                    margin-left: 3rem;
+                    padding-top: .5rem;
+                    padding-bottom: .5rem; /*Creo un boton mediante un enlace dandole estilos*/
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
+                    border-radius: 10px;
+                    border: 2px solid $color-primario;
+                    background-color:  $color-secundario;
+                }
+            }
+        }
+        &:hover .mitad-1 img{
+            transform: scale(1.05);
+        }
+    }
+}

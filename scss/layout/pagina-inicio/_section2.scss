@@ -1,0 +1,97 @@
+.carousel{
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+}
+//PANTALLA DESKTOP
+
+@media only screen and (min-width: 1200px){
+    .section2{
+        margin-bottom: 3rem ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            border: 3px solid #000000;
+            padding: 10px;
+            color: $color-primario;
+            background-color: $color-secundario;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+//DISPOSITIVO MOVIL VERTICAL
+@media only screen and (max-width: 320px){
+    .section2{
+        margin-bottom: 2rem ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            border: 3px solid #000000;
+            padding: 10px;
+            color: $color-primario;
+            background-color: $color-secundario;
+            font-weight: bold;
+            margin: 2rem 0;
+        }
+    }
+}
+
+//DISPOSITIVO MOVIL HORIZONTAL
+@media only screen and (min-width: 320px) and (max-width:480px){
+    .section2{
+        margin-bottom: 2rem ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            border: 3px solid #000000;
+            padding: 10px;
+            color: $color-primario;
+            background-color: $color-secundario;
+            font-weight: bold;
+            margin: 2rem 0;
+        }
+    }
+}
+
+//TABLETAS EN VERTICAL Y HORIZONTAL
+@media only screen and (min-width: 481px) and (max-width:768px){
+    .section2{
+        margin-bottom: 2rem ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            border: 3px solid #000000;
+            padding: 10px;
+            color: $color-primario;
+            background-color: $color-secundario;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+// PANTALLA PORTATILES
+@media only screen and (min-width: 769px) and (max-width:1199px){
+    .section2{
+        margin-bottom: 2.5rem ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            border: 3px solid #000000;
+            padding: 10px;
+            color: $color-primario;
+            background-color: $color-secundario;
+            font-size: 2.2rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+}
