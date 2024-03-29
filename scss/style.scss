@@ -1,7 +1,4 @@
-//Variables para usar en todas las paginas
-$color-primario: #F4DFC8;
-$color-secundario: #3C2A21;
-$tamaño-img: 25vw;
+@import "components/variables";
 
 //PARA TODAS LAS PAGINAS:
 @import "base/body";
@@ -17,14 +14,14 @@ $tamaño-img: 25vw;
 @import "layout/pagina-inicio/section-sorteo";
 
 //PARA LA PAGINA DE LA TIENDA
-@import "layout/pagina-tienda/section-tienda";
+@import "layout/section-tienda";
 
 //PARA LA PAGINA DE CONTACTO
-@import "layout/pagina-contacto/contacto";
+@import "layout/contacto";
 
 //PARA LA PAGINA DE NOSOTROS
-@import "layout/pagina-nosotros/nosotros";
+@import "layout/nosotros";
 @import "components/hr";
 
 //PARA LA PAGINA DE SERVICIOS
-@import "layout/pagina-servicios/servicios";
+@import "layout/servicios";

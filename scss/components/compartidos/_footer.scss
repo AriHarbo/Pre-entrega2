@@ -4,17 +4,16 @@
         display: flex;
         align-items: center;
         border-top: 1px solid black;
-        padding: 1rem; 
         background-color: #000000;
         .iconos-redes{
             display: flex;
             .redes{
-                margin: 3rem;
+                margin: 1rem 3rem;
                 transition: 0.3s;
                 a{
                     text-decoration: none;
                     img{
-                        width: 100px;
+                        width: 65px;
                         margin: 1rem;
                     }
                 }
@@ -25,7 +24,6 @@
         }
         div{
             p{
-                margin: 5rem;
                 color: #F4EAE0;
             }
         }
@@ -152,7 +150,7 @@
         .iconos-redes{
             display: flex;
             .redes{
-                margin: 3rem;
+                margin:  1rem 3rem;
                 transition: 0.3s;
                 a{
                     text-decoration: none;
@@ -168,7 +166,6 @@
         }
         div{
             p{
-                margin: 5rem;
                 color: #F4EAE0;
             }
         }
